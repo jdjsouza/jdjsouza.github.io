@@ -1,12 +1,215 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Application Process</title>
-    <link rel="stylesheet" href="style.css"/>
+  <meta charset="UTF-8">
+  <title>CodePen - Resume Website</title>
+  <link rel="stylesheet" href="./style.css">
+
 </head>
 <body>
-    <p>This is part of the Prime Digital Academy application process! I am going to create my resume as a webpage.</p>
+<script  src="./script.js"></script>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<div id="container">
+  <div id="contactInfo">
+    <h1>Josh Souza</h1>
+    <h2>A+ & ACSP Certified</h2>
+    <h3>phone number goes here</h3>
+    <h3>email address goes here</h3>
+    <hr>
+   </div>
+    <div id="profSummary">
+      <p>IT Professional with more than 15 years’ experience, over 3 years in health care, supporting desktop, laptop, networks, telecommunication and servers, as well as, hardware, software applications, office suites and other electronics.  I am a professional with strong customer and client relation skills effectively supporting clients both in-person and remotely. Experienced with multiple operating systems, applications, and system tools.  I have utilized multiple ticketing and monitoring systems in many environments. </p>
+    <hr>  
+  </div>
+  
+    <div class="tab">
+      <button class="tablinks" onclick="openInfo(event, 'workHistory')" id="defaultOpen">Work History</button>
+      <button class="tablinks" onclick="openInfo(event, 'Certifications')">Certifications</button>
+      <button class="tablinks" onclick="openInfo(event, 'knownTechnologies')">Known Technologies</button>
+    </div>
+
+    <div id="workHistory" class="tabcontent">
+      <h3 class="company">Cox Auto Inc </h3>
+      <p class="location">Austin, TX and Overland Park, KS</p>
+      <p>Sr. Desktop Support Analyst/Sr. Support Technician
+        <span style="float:right;">
+          Jan 2016 - Aug 2020
+      </p>
+      <ul>
+        <li>Active Directory: Create, Term and Administer user accounts and computers on multiple domains</li>
+        <li>Provide Tier 2 and Tier 3 support for up to 600 team members locally including VIP’s</li>
+        <li>Support Multiple Business Units</li>
+        <li>Support remote users and users that travel regularly</li>
+        <li>Manage and Track assets physically and in ServiceNow</li>
+        <li>Deploy new users and collect equipment from separated users</li>
+        <li>Manage and Setup mobile devices</li>
+        <li>Work with Vendors for warranty support</li>
+        <li>Assist with migration from one domain exchange environment to an Office 365 environment</li>
+        <li>Image and Refresh desktops, laptops, and Apple computers</li>
+        <li>Create images using WDS, created PowerShell scripts for build process after switching to SCCM</li>
+        <li>Virus investigation and removal</li>
+        <li>Collaborate with other IT teams to resolve complex issues</li>
+        <li>Audio/Video support and work with vendors for building out new rooms and maintaining equipment</li>
+        <li>Resolve issues for team members when they’re upset</li>
+        <li>Slowly implemented corporate policy and procedures while building trust in the Business Unit</li>
+        <li>Trained my replacement at the Austin location and provided support to ensure his continued success</li>
+      </ul>
+      
+      <h3 class="company">National Bank of Kansas City</h3>
+      <p class="location">Overland Park, KS</p>
+      <p>Technology Support II
+        <span style="float:right;">
+          Mar 2015 - Dec 2015
+      </p>
+      <ul>
+        <li>Active Directory: Admin user accounts, computers and GPO</li>
+        <li>Exchange: Create, Term and Administer Mailboxes and Distribution groups</li>
+        <li>Provide Tier 2 support to 250 team members locally including VIP’s</li>
+        <li>Configure and Administer Cisco Telecommunication systems</li>
+        <li>Disaster Recovery configuration and testing</li>
+        <li>Manage Backups and replication using Syncovery and Veeam</li>
+        <li>Build and manage servers in VSphere</li>
+        <li>Deploy new users and collect equipment from terminated team members</li>
+        <li>Manage and Setup mobile devices</li>
+        <li>Work with Vendors for warranty support and trouble tickets</li>
+        <li>Image and Refresh desktops and laptops</li>
+        <li>Nessus security audit and incident resolution</li>
+        <li>Manage ticket queue</li>
+      </ul>
+      
+      <h3 class="company">Cox Auto Inc/Primus Software</h3>
+      <p class="location">Overland Park, KS</p>
+      <p>Desktop Support Analyst/Contractor
+        <span style="float:right;">
+          Apr 2014 - Mar 2015
+      </p>
+      <ul>
+        <li>Active Directory: Create, Term and Administer user accounts and computers</li>
+        <li>Exchange: Create, Term and Administer Mailboxes and Distribution groups</li>
+        <li>Provide Tier 2 and Tier 3 support to 600 users locally including VIP’s</li>
+        <li>Support Multiple Business Units</li>
+        <li>Support remote users and users that travel regularly</li>
+        <li>Manage and Track assets physically and in an Asset Database</li>
+        <li>Deploy new users and collect equipment from separated team members</li>
+        <li>Manage and Setup mobile devices</li>
+        <li>Work with Vendors for warranty support</li>
+        <li>Assist with migration from one domain exchange environment to an Office 365 environment</li>
+        <li>Image and Refresh desktops and laptops</li>
+        <li>Virus investigation and removal</li>
+        <li>Collaborate with other IT teams to resolve complex issues</li>
+      </ul>
+      
+      <h3 class="company">AccessMED/McKesson Specialty Health</h3>
+      <p class="location">Overland Park, KS</p>
+      <p>Network/Desktop Systems Specialist III
+        <span style="float:right;">
+          Oct 2012 - Mar 2014
+      </p>
+      <ul>
+        <li>Support users at multiple sites with software, hardware and passwords</li>
+        <li>Support the call center</li>
+        <li>Assist MSH USOncology service desk with tickets</li>
+        <li>Assist with managing the Mitel phone systems in a call center</li>
+        <li>Create new user accounts and setup extensions</li>
+        <li>Check Phone systems daily for outages and alarms</li>
+        <li>On call for Phone and other system outages</li>
+        <li>Refresh Computers and Inventory</li>
+        <li>PC, Fax, Printer and Copier troubleshooting and system setup</li>
+        <li>Create documentation for processes and procedures</li>
+        <li>Keep existing database of users/accounts/extensions/locations up to date</li>
+        <li>Manage Keri Key Card door system, activate/deactivate and add new users</li>
+        <li>Test Software Configuration settings for multiple OS</li>
+        <li>Manage Users and Computers in Active directory</li>
+        <li>Manage Exchange distribution groups</li>    
+      </ul>
+      
+      <h3 class="company">Deluxe Corporation</h3>
+      <p class="location">Lenexa, KS</p>
+      <p>Technical Analyst
+        <span style="float:right;">
+          Jul 2012 - Oct 2012
+      </p>
+      <ul>
+        <li>Support over 450 Call Center users with software, hardware and passwords</li>
+        <li>Update and manage Asset Inventory</li>
+        <li>Update and manage network Port Inventory</li>
+        <li>Refresh Computers</li>
+        <li>Assist with troubleshooting Lotus Notes DB Issues</li>
+        <li>Manage Users and Computers in Active directory</li> 
+      </ul>
+      
+      <h3 class="company">AccessMED/McKesson/TFI Resources</h3>
+      <p class="location">Overland Park, KS</p>
+      <p>IT Contractor
+        <span style="float:right;">
+          Jul 2011 - July 2012
+      </p>
+      <ul>
+        <li>Support over 150 users in a call center with software, hardware and passwords</li>
+        <li>Assist with managing the Mitel phone systems in a call center</li>
+        <li>Create new user accounts and setup extensions</li>
+        <li>Check Phone systems daily for outages and alarms</li>
+        <li>Refresh Computers and Inventory</li>
+        <li>PC, Fax, Printer and Copier troubleshooting and system setup</li>
+        <li>Create documentation for processes and procedures</li>
+        <li>Keep existing database of users/accounts/extensions/locations up to date</li>
+        <li>Manage Keri Key Card door system, activate/deactivate and add new users</li>
+        <li>Manage Users and Computers in Active directory</li>
+      </ul>
+      
+      <h3 class="company">Kansas University Medical Center</h3>
+      <p class="location">Kansas City, KS</p>
+      <p>Service Desk Technician II
+        <span style="float:right;">
+          Apr 2010 - July 2011
+      </p>
+      <ul>
+        <li>Support over 2000 users with software, hardware and passwords</li>
+        <li>Assist remote users with accessing hospital systems</li>
+        <li>Troubleshoot network outages back to the switches and UPS</li>
+        <li>Monitor Servers and networks for outages</li>
+        <li>Refresh Computers</li>
+        <li>PC, Fax, Printer and Copier move – single person to whole department</li>
+        <li>AS400 Run jobs on the mainframe</li>
+        <li>Manage backups and watch for tape errors</li>
+        <li>Manage Users and Computers in Active directory</li>
+      </ul>
+      
+      <h3 class="company">Self Employed</h3>
+      <p class="location">Modesto, CA and Tulsa, Ok</p>
+      <p>IT Specialist
+        <span style="float:right;">
+          2003 - 2011
+      </p>
+      <ul>
+        <li>Support users in small business environments and home networks.</li>
+        <li>Support users remotely with various RDP Software.</li>
+        <li>Perform data backup and recovery.</li>
+        <li>Consult, install and administer Security Suites</li>
+        <li>Design and build all aspects of new networks for Small Business - Peer to Peer Networks and small Servers.</li>
+      </ul>
+  </div>  
+
+    <div id="Certifications" class="tabcontent">
+      <h3>CompTIA A+ <br> Apple ACSP</h3> 
+      <br>
+    </div>
+
+    <div id="knownTechnologies" class="tabcontent">
+      <h3>Operating Systems</h3>
+      <p>Windows Server 2000, 2003, 2008 and 2012. Windows 3.1, 95, NT, 98, ME, 2000, XP & 64bit, Vista, Windows 7, Windows 8.1, Windows 10, Ubuntu, Novell, OSX, iOS and Android</p>
+      <h3>Applications</h3>
+      <p>Active Directory, Exchange, Mitel Director, PrairieFyre, Keri Key Card, RightFax, ImageNow, OAISYS, Blackberry Enterprise, Symantec Anti-Virus, MacAfee Enterprise, Trend Micro Anti-Virus, NOD32 Anti-Virus, Novel Netware Client, Novel iPrint, GroupWise, Heat, Remedy, ServiceNow, Citrix, VMWare, MS Portal & Sharepoint, Sieble, MS Office 2000, 2003, 2007, 2010, 2013, 2016 & O365, CFDesign, SolidWorks, AutoCAD, Bryce3D, Adobe Photo Shop, Adobe Acrobat Pro, Norton Ghost, Altiris, DameWare, Lotus Notes, AS400, Opera Web Browser, Open Office, Wyse Terminal Service, Visual Basic 6, MS Access, Cisco VPN, IBM VPN, Dell KACE, WSUS, WebEX, GoTo Meeting, Lync, MS SQL Server and FTP Servers, Cisco CUCM 10.5, Cisco IM&P, Cisco Unified, Cisco Expressway Edge & Core, Xmedius, VSphere, Veeam, Syncovery, Zenoss, Netwrix, Shavlik, Trend Anti-Virus and Endpoint Encryption, Postgres SQL, Jabber, SmartDeploy, MobileIron, Encompass, Nessus, Smart Deploy, MobileIron</p>
+      <h3>Hardware</h3>
+      <p>Mitel VOIP, Avaya VoIP, Cisco Phones, Routers and Switches, Wireless Access Points, LOS Point to Point Wireless Access, IBM Mainframes, Dell Servers, Lenovo, HP and Dell Workstations, Laptops and Tablets, Wyse Terminals, Lanier and Ricoh Copiers, HP Printers, Sharp Copiers, Surveillance Systems, Legacy Computers - Commodore 64, IBM 286, 386, 486, Pentium I – IV and Tape Drives, CAT 5e cabling, RAID 0,1,5, iPhones, iPads, Android Tablets, Android phones</p>
+      <h3>Networking</h3>
+      <p>
+Networking: CAT 5e Cabling, Cisco Routers, Switches and Wireless Access Points, LOS Point to Point Wireless Access Points, Switch and Patch Panel rewire and inventory, IDF Cable Management, Tone Out Patch Panels, Trace breaks in Cabling
+</p>
+      <h3>Telecommunications</h3>
+      <p>Mitel, PrairieFyre, OAISYS, Avaya, Verint, Cisco CUCM 10.5, Cisco IM&P, Cisco Unity</p>
+  </div>
+  
+</div>
 </body>
 </html>
